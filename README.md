@@ -53,7 +53,7 @@ fish `getopts` follows the specifications described in the [Utility Syntax Guide
 
 + Options that can take an argument optionally shall specify the argument in the same string as the option argument if in short option style: `-aargument`, or separated by a `=` if in long form: `--long-form=argument`. If a blank space is used, the following argument will be treated independently.
 
-+ Options can appear multiple times in the same argument list. `getopts` will print every match sequentally on each call, and should default to the short form of the option if available.
++ Options can appear multiple times in the same argument list. `getopts` will print every match sequentially on each call, and should default to the short form of the option if available.
 
 + The option delimiter `:` and optional argument character `^` shall not be used as an option.
 
@@ -76,7 +76,7 @@ The following environment variables are used internally by `getopts`. These vari
 ## <a name="diagnostics"></a>Diagnostics
 Possible exit status values are:
 
-+ __0__: An argument formed like an option was found. This causes getopts to print the option short-style and its argument if avaiable. If strict-mode is enabled setting the first character of the option to `:`, an unknown option will cause `getopts` to fail. See below.
++ __0__: An argument formed like an option was found. This causes getopts to print the option short-style and its argument if available. If strict-mode is enabled setting the first character of the option to `:`, an unknown option will cause `getopts` to fail. See below.
 
 + __1__: The end of the options was reached. Remaining operands are also sent to stdout.
 
